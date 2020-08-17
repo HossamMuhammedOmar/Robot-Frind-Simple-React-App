@@ -1,16 +1,20 @@
 import React from 'react';
-import { robots } from './robot';
 import Card from './Card';
+import SearchBox from './SearchBox';
 
-const CardList = () => {
-  const cardComponent = robots.map((user) => {
+const CardList = ({ robots }) => {
+  const cardComponent = robots.map((user, i) => {
     return (
-      <div key={user.id}>
-        <Card id={user.id} name={user.name} email={user.email} />
+      <div key={robots[i].id}>
+        <Card id={robots[i].id} name={robots[i].name} email={robots[i].email} />
       </div>
     );
   });
-  return <div className="container">{cardComponent}</div>;
+  return (
+    <div>
+      <div className="container">{cardComponent}</div>
+    </div>
+  );
 };
 
 export default CardList;
