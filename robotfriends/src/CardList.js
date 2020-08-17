@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from './Card';
-import SearchBox from './SearchBox';
 
 const CardList = ({ robots }) => {
   const cardComponent = robots.map((user, i) => {
