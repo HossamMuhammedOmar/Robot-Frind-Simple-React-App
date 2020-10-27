@@ -1,1 +1,1 @@
-# Robot 🤖 Frind 🥰 Simple 🤏 React ❄️ App 👾
+# Robot Frind Simple React App
